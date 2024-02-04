@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Roboto:wght@500&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="styles/images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <link rel="stylesheet" href="styles/skills.css"> -->
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="content">
+            <header>
+                <nav>
+                    <div class="left" style="cursor: pointer;">
+                        &lt;P<span class="none1">ort</span><span class="red">f<span class="none2">olio</span>&gt;</span>
+                        <!-- x</a> -->
+                    </div>
+                    <div class="right">
+                        <ul class="navMenu">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="#project">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <a class="color" href="ContactSection.html">
+                                <button class="resume1" style="cursor: pointer;">
+                                    Contact us
+                                </button>
+                            </a>
+                        </ul>
+                    </div>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </nav>
+            </header>
+            <div class="mobile-nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="#services">Services</a>
+                <a href="ContactSection.html">Contact</a>
+            </div>
+            <section class="firstsection">
+                <div data-scroll data-scroll-speed="-2" class="leftsection">
+                    <div class="python">
+                        Hello World,
+                    </div>
+                    <span class="purple">Meet Our Team</span>
+                    <!-- <span id="element"></span> -->
+                    <div class="subtext">
+                        &#124; Kshitiz &#124; Kritika &#124; Krishna &#124;
+                    </div>
+                    <div class="button">
+                        <a href="#project">
+                            <button class="resume">
+                                Projects
+                            </button>
+                        </a>
+
+
+                        <a href="#about">
+                            <button class="github">
+                                About
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- <hr class="line-section"> -->
+            <div class="page2">
+                <div id="page2">
+                    <div id="elem1" class="elem">
+                        <img data-scroll data-scroll-speed="1"
+                            src="https://cdn.vectorstock.com/i/1000x1000/97/68/cartoon-man-icon-face-isolated-vector-14339768.webp"
+                            alt="">
+                        <div data-scroll data-scroll-speed="-1" class="dets">
+                        </div>
+                    </div>
+                    <div id="elem2" class="elem">
+                        <img data-scroll data-scroll-speed="1"
+                            src="data:image/jpeg;base64,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"
+                            alt="">
+                        <div data-scroll data-scroll-speed="-1" class="dets"></div>
+                    </div>
+                    <div id="elem3" class="elem">
+                        <img data-scroll data-scroll-speed="1"
+                            src="https://cdn.vectorstock.com/i/1000x1000/97/74/cartoon-man-icon-face-isolated-vector-14339774.webp"
+                            alt="">
+                        <div data-scroll data-scroll-speed="-1" class="dets"></div>
+                    </div>
+                </div>
+            </div>
+            <sections class="about" id="about">
+                <p class="reveal-type">
+                    <span class="a">About us&#128515;</span><br>
+                    We are a dynamic team of passionate<span class> web developers</span> with a shared vision for creating high-quality,
+                    innovative online experiences. We hail from diverse backgrounds and bring a wealth of expertise to
+                    the table, encompassing front-end development, user interface and user experience
+                    design, and everything in between.
+                </p>
+            </sections>
+            <hr class="line-in">
+            <section class="video">
+                <div id="video-container" data-tilt data-tilt-max="5" data-tilt-reverse="true"> 
+                    <h1 class="developer">Developers</h1>
+                    <div id="play">PLAY</div>
+                    <video autoplay loop muted src="styles/videos/source_code_-_4733 (720p).mp4"></video>
+                </div>
+            </section>
+            <section class="skills mtop background2">
+                <div class="contaner flex">
+                    <div class="lef">
+                        <div class="heading">
+                            <!-- <div class="heading_top flex">
+                                <div class="line"></div>
+                                <div class="line line2"></div>
+                                <i class="fas fa-circle"></i>
+                                <h3> Expertise</h3>
+                            </div> -->
+                            <div class="heading_bottom">
+                                <h2><span>Skills 🛠️</span></h2>
+                            </div>
+                        </div>
+
+                        <div class="text">
+                            <h3>Every Day is a New Challenge</h3>
+                            <p class="para-out">We are a group of highly motivated and skilled web developers with a deep passion for creating beautiful and functional online experiences. We have a strong foundation in both front-end and back-end development, with experience in a variety of technologies and frameworks.</p>
+
+                            <button class="btn2 btn3">Hire Me</button>
+                        </div>
+                    </div>
+
+
+                    <div class="righ">
+                        <!-- line skill bars-->
+                        <div class="line_content">
+                            <div class="line flex1">
+                                <p>HTML</p>
+                                <div class="bar">
+                                    <div class="line_bar html"> </div>
+                                </div>
+                                <h5>85</h5>
+                            </div>
+
+                            <div class="line">
+                                <p>CSS</p>
+                                <div class="bar">
+                                    <div class="line_bar css"></div>
+                                </div>
+                                <h5>75</h5>
+                            </div>
+
+                            <div class="line">
+                                <p>JAVSCRIPT</p>
+                                <div class="bar">
+                                    <div class="line_bar photo"> </div>
+                                </div>
+                                <h5>19</h5>
+                            </div>
+                        </div>
+                        <!-- line skill bars-->
+
+
+                        <div class="skill-container flex1">
+                            <div class="circle_box">
+                                <svg class="skill-circle" height="150" width="150">
+                                    <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 264px;"
+                                        transform="translate(50,50) rotate(-90)"></circle>
+                                    <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana"
+                                        font-size="28">80</text>
+                                </svg>
+                                <h4>VIDEO EDITING</h4>
+                            </div>
+
+                            <div class="circle_box">
+                                <svg class="skill-circle" height="150" width="150">
+                                    <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 170px;"
+                                        transform="translate(50,50) rotate(-90)"></circle>
+                                    <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana"
+                                        font-size="28">56</text>
+                                </svg>
+                                <h4 align="center">PYTHON </h4>
+                            </div>
+
+                            <div class="circle_box">
+                                <svg class="skill-circle" height="150" width="150">
+                                    <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 224px;"
+                                        transform="translate(50,50) rotate(-90)"></circle>
+                                    <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana"
+                                        font-size="28">60</text>
+                                </svg>
+                                <h4>HTML/JAVSCRIPT</h4>
+                            </div>
+
+                            <div class="circle_box">
+                                <svg class="skill-circle" height="150" width="150">
+                                    <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 150px;"
+                                        transform="translate(50,50) rotate(-90)"></circle>
+                                    <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana"
+                                        font-size="28">50</text>
+                                </svg>
+                                <h4>BOOTSTRAP</h4>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <div class="grey">
+
+                <!-- <div class="svg">
+                    <img src="styles/images/blob.svg" alt="">
+                </div> -->
+                <section class="container" id="services">
+                    <h2 class="header">OUR FEATURES</h2>
+                    <div class="features">
+                        <div class="card">
+                            <span><i class="ri-money-dollar-box-line"></i></span>
+                            <h4>Free Tutorials</h4>
+                            <p>
+                                My tutorials in our channel are free and you don't need to pay anything.
+                            </p>
+                            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                        <div class="card">
+                            <span><i class="ri-bug-line"></i></span>
+                            <h4>Fix Your Bugs</h4>
+                            <p>
+                                You have any problem in your codes? Tell us, we will help you fix it.
+                            </p>
+                            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                        <div class="card">
+                            <span><i class="ri-history-line"></i></span>
+                            <h4>On Time Videos</h4>
+                            <p>
+                                We have video each 4 days, So check channel every 4 days to watch it!
+                            </p>
+                            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                        <div class="card">
+                            <span><i class="ri-shake-hands-line"></i></span>
+                            <h4>Cooperation</h4>
+                            <p>
+                                You want we worrk together? Write email to us, we will read it.
+                            </p>
+                            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="down-arrow">
+
+                    </div>
+                </section>
+
+                <section class="container">
+                    <h2 class="header">PROJECT PRICING PLANS</h2>
+                    <p class="sub-header">
+                        Our pricing plans come with various membership tiers, each tailored to cater to different
+                        projects
+                        and
+                        class+ code types.
+                    </p>
+                    <div class="pricing">
+                        <div class="card">
+                            <div class="content">
+                                <h4>Basic Plan</h4>
+                                <h3>Rs.500</h3>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    Smart coding plan
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    At home workouts
+                                </p>
+                            </div>
+                            <button class="btn">Join Now</button>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <h4>Gold Plan</h4>
+                                <h3>Rs.1000</h3>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    Pro codes
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    Smart coding plan
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    At home workouts
+                                </p>
+                            </div>
+                            <button class="btn">Join Now</button>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <h4>Diamond Plan</h4>
+                                <h3>Rs.5000</h3>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    Elite Classes & Courses
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    Pro codes
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    Personal Coaching
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    Smart coding plan
+                                </p>
+                                <p>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    At home workouts
+                                </p>
+                            </div>
+                            <button class="btn">Join Now</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="page4" id="project">
+                <h2>
+                    Projects
+                </h2>
+                <p class="sub-header">
+                    These are some of the projects made by our team.
+                </p>
+                <div class="grid">
+                    <div class="image">
+                        <a href="projects/Calculator/apple calculator.html">
+                            <img src="styles/images/calc-image.jgp.jpg" alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="content">
+                                <h3 class="head-in header">Calculator</h3>
+                                <p class="para-in">This calculator app is designed to handle all your everyday
+                                    mathematical calculations with ease and precision. Whether you're a student,
+                                    professional, or just need a quick tool for everyday use, this app is the perfect
+                                    solution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image2">
+                        <a href="projects/to-do/New to do list.html">
+                            <img src="styles/images/to-do.avif" alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="content">
+                                <h3 class="head-in">To - do App</h3>
+                                <p class="para-in">Organize Your Life with the Ultimate To-Do List App
+                                    Take control of your day and achieve your goals with our comprehensive to-do list
+                                    app. Designed for seamless task management and productivity enhancement, this app is
+                                    your one-stop solution for organizing your busy life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image3">
+                        <a href="projects/youtube-clone.html">
+                            <img src="styles/images/youtube-image.jpg" alt="">
+                        </a>
+                        <div class="overlay">
+                            <div class="content">
+                                <h3 class="head-in">Youtube</h3>
+                                <p class="para-in">
+                                    Unleash Your Inner YouTuber with a Feature-Rich YouTube Frontend App
+                                    Immerse yourself in the world of YouTube with a comprehensive frontend app that
+                                    elevates your video-watching experience. Designed to provide seamless navigation,
+                                    enhanced search capabilities, and personalized recommendations, this app is your
+                                    ultimate gateway to the vast content of YouTube.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="flexbox">
+                <ul class="social-icon">
+                    <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link"
+                            href="https://twitter.com/The7kmaster/status/1707177469789245510">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="https://in.linkedin.com/">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+                <p>&copy; Kshitiz | All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+        integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="scrpits/vannila-tilt.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scrpits/scrpit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.js"></script>
+        
+    </body>
+</html>

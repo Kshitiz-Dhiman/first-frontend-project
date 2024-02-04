@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- <p class="para">Calculator</p> -->
+    <div class="conatiner">
+        <p class="display-total">0</p>
+        <div class="grid">
+            <button onclick="
+                document.querySelector('.display-total').innerHTML = 0;
+                calculation = '';
+                " class="grey">AC</button>
+            <button onclick="
+                document.querySelector('.display-total').innerHTML= document.querySelector('.display-total').innerHTML.slice(0 , -1)
+            " class="grey">C</button>
+            <button onclick="" class="grey">%</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('/');
+            " class="orange">&#247;</button>
+            <button onclick="
+                // calculation = 7;
+                document.querySelector('.display-total').   innerHTML = calc('7');
+            " class="">7</button>
+            <button onclick="
+                // calculation = 8;
+                document.querySelector('.display-total').   innerHTML = calc('8');
+            " class="">8</button>
+            <button onclick="
+                // calculation = 9;
+                document.querySelector('.display-total').   innerHTML = calc('9');
+            " class="">9</button>
+            <button onclick="
+                // calculation = ;
+                document.querySelector('.display-total').   innerHTML = calc('*');
+            " class="orange">&#215;</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('4');
+            " class="">4</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('5');
+            " class="">5</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('6');
+            " class="">6</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('-');
+            " class="orange">-</button>
+            <button onclick="
+                // calculation = 1;
+                document.querySelector('.display-total').   innerHTML = calc('1');
+            " class="">1</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('2');
+            " class="">2</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('3');
+            " class="">3</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('+');
+            " class="orange">+</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('0');
+            " class="">0</button>
+            <button onclick="
+                document.querySelector('.display-total').   innerHTML = calc('.');
+            " class="">.</button>
+            <button onclick="" class="">,</button>
+            <button onclick="
+                calculation = eval(calculation);
+                document.querySelector('.display-total').   innerHTML = calculation;
+                calculation = '';
+            " class="orange">=</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script/calc.js">
+
+    </script>
+
+</body>
+</html>

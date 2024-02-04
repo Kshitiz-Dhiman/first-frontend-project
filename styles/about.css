@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace; */
+    font-family: 'Source code pro';
+    color: white;
+    text-decoration: none;
+}
+body {
+    background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(circle-scatter-haikei.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    height: 2000px;
+}
+.left {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+#nav {
+    position: fixed;
+    z-index: 2;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+.home ,
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.1s;
+    padding: 20px 20px;
+}
+.home:hover ,
+nav ul li a:hover {
+    background: rgb(168, 6, 78);
+    border-radius: 30px;
+    color: black;
+}
+.resume1 {
+    background: transparent;
+    padding: 20px 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    border: 1px solid white;
+    margin: 37px;
+}
+.resume1:hover {
+    background:rgb(168, 6, 78) ;
+}
+.container {
+    height: 730px;
+    background: white;
+}
+.image1 {
+    display: flex;
+}
+.aboutme {
+    height: 340px;
+    margin: 100px 0;
+}
+.flez {
+    display: flex;
+    justify-content: space-between;
+    /* width: 1000px; */
+    margin: 51px 267px;
+}
+.raght {
+    background: lightblue;
+    height: 300px;
+    width: 55%;
+    animation: left 5s;
+    border-radius: 100px;
+}
+.laft {
+    height: 300px;
+    width: 45%;
+    animation: right 5s;
+    margin-left: 40px;
+}
+@keyframes right {
+    from {
+        position: relative;
+        left: 80%;
+    }
+    to {
+        position: relative;
+        left: 0%;
+    }
+}
+@keyframes left {
+    from {
+        position: relative;
+        right: 80%;
+    }
+    to {
+        position: relative;
+        right: 0%;
+    }
+}
+section .header {
+    margin-bottom: 1rem;
+    color: rgb(255, 0, 119);
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: rgb(85, 84, 84);
+    font-weight: bold;
+}

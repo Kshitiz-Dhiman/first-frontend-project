@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace; */
+    font-family: 'Source code pro';
+    color: white;
+    text-decoration: none;
+}
+body {
+    background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(circle-scatter-haikei.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    height: 700px;
+}
+
+/* rgb(31, 37, 65) */
+.left {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+#nav {
+    position: fixed;
+    z-index: 2;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+.home ,
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.1s;
+    padding: 20px 20px;
+}
+.home:hover ,
+nav ul li a:hover {
+    background: rgb(168, 6, 78);
+    border-radius: 30px;
+    color: black;
+}
+.resume1 {
+    background: transparent;
+    padding: 20px 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    border: 1px solid white;
+    margin: 37px;
+}
+.resume1:hover {
+    background:rgb(168, 6, 78) ;
+}
+
+.section {
+    height: 550px;
+}
+.container {
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 100px 43px;
+    width: 1115px;
+    position: relative;
+    left: 10%;
+}
+
+.left-section {
+        /* background: white; */
+        width: 50%;
+        position: relative;
+        top: 44px;
+}
+.right-section {
+    background: white;
+    width: 50%;
+    border-radius: 20px;
+    height: 463px;
+    border: 5px solid rgb(174, 5, 80);
+    margin-top: -52px;
+    /* backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(199, 205, 214, 0.73);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+}
+.left {
+    font-size: 2rem;
+}
+.right {
+    
+}
+.great_together {
+    font-weight: bold;
+    font-size: 3.4rem;
+}
+.twowords {
+    margin-bottom: 502px;
+    font-size: 2.5rem;
+    color: rgb(174, 5, 80);
+}
+.name {
+    color: black;
+    /* display: block; */
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px grey solid;
+    height: 20px;
+    padding: 10px 10px;
+    width: 86%;
+    margin: 10px 20px;
+}
+.right div ul li {
+    list-style: none;
+
+}
+.right div {
+    /* position: relative;
+    left: 35%; */
+}
+.name1{
+    color: black;
+    /* display: block; */
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px grey solid;
+    height: 100px;
+    padding: 0 10px;
+    width: 86%;
+    margin: 10px 20px;
+}
+.submit {
+    background:rgb(168, 6, 78) ;
+    padding: 20px 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+    left: 35%;
+}
+.submit:hover {
+    background: rgb(191, 72, 126);
+}
